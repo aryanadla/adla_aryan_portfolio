@@ -1,4 +1,3 @@
-
 import React, { useEffect, useRef } from 'react';
 import { Github, Mail, Download, Linkedin } from 'lucide-react';
 import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
@@ -107,7 +106,7 @@ const HeroSection = () => {
             <div className="bg-gray-900 rounded-full p-8">
               <Avatar className="w-32 h-32">
                 <AvatarImage 
-                  src="src/components/img-ari.jpg" 
+                  src="/profile.jpg" 
                   alt="Adla Aryan"
                   className="object-cover"
                 />
