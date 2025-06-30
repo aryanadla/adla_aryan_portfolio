@@ -1,6 +1,6 @@
 
 import React, { useEffect, useRef } from 'react';
-import { Github, Mail, Download, Star } from 'lucide-react';
+import { Github, Mail, Download, Linkedin } from 'lucide-react';
 
 const HeroSection = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -86,7 +86,7 @@ const HeroSection = () => {
 
   const socialLinks = [
     { name: 'GitHub', icon: Github, url: 'https://github.com/aryanadla' },
-    { name: 'LinkedIn', icon: Star, url: 'https://www.linkedin.com/in/adla-aryan-aa4049216/' },
+    { name: 'LinkedIn', icon: Linkedin, url: 'https://www.linkedin.com/in/adla-aryan-aa4049216/' },
     { name: 'Email', icon: Mail, url: 'mailto:aryanadla446@gmail.com' },
     { name: 'Resume', icon: Download, url: '#' }
   ];
