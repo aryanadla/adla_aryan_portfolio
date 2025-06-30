@@ -27,7 +27,7 @@ const AboutSection = () => {
           <div className="space-y-6">
             <div className="bg-gray-800/30 backdrop-blur-sm border border-cyan-500/20 rounded-2xl p-8 hover:border-cyan-400/40 transition-all duration-300">
               <p className="text-lg text-gray-300 leading-relaxed mb-6">
-                I'm a passionate engineer working at the intersection of <span className="text-cyan-400 font-semibold">AI, Cloud DevOps, and Web3</span>, with a strong focus on AI-Ops and infrastructure automation.
+                I'm a passionate engineer working at the intersection of <span className="text-cyan-400 font-semibold">AI, Cloud DevOps, and Full-stack</span>, with a strong focus on AI-Ops and infrastructure automation.
               </p>
               <p className="text-lg text-gray-300 leading-relaxed">
                 I specialize in building intelligent systems that bridge machine learning, cloud orchestration, and full-stack engineering using platforms like <span className="text-purple-400 font-semibold">Azure, GCP, and Terraform</span>.
