@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Linkedin } from 'lucide-react';
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -45,6 +45,14 @@ const Navigation = () => {
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-cyan-400 to-purple-500 group-hover:w-full transition-all duration-300"></span>
               </a>
             ))}
+            <a
+              href="https://www.linkedin.com/in/adla-aryan-aa4049216/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-300 hover:text-cyan-400 transition-colors duration-300"
+            >
+              <Linkedin size={20} />
+            </a>
           </div>
 
           {/* Mobile Menu Toggle */}
@@ -72,6 +80,16 @@ const Navigation = () => {
                   {item.name}
                 </a>
               ))}
+              <a
+                href="https://www.linkedin.com/in/adla-aryan-aa4049216/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center space-x-2 text-gray-300 hover:text-cyan-400 transition-colors duration-300"
+                onClick={() => setIsOpen(false)}
+              >
+                <Linkedin size={20} />
+                <span>LinkedIn</span>
+              </a>
             </div>
           </div>
         )}

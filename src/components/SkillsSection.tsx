@@ -18,25 +18,46 @@ const SkillsSection = () => {
       title: "Languages",
       icon: Code,
       color: "from-cyan-400 to-blue-500",
-      skills: ["Java", "JavaScript", "TypeScript", "SQL"]
+      skills: [
+        { name: "Java", rating: 4 },
+        { name: "JavaScript", rating: 4 },
+        { name: "TypeScript", rating: 4 },
+        { name: "Python", rating: 5 },
+        { name: "SQL", rating: 4 }
+      ]
     },
     {
       title: "Cloud Platforms",
       icon: Award,
       color: "from-purple-400 to-pink-500",
-      skills: ["Azure", "Google Cloud", "AWS"]
+      skills: [
+        { name: "Azure", rating: 5 },
+        { name: "Google Cloud", rating: 4 },
+        { name: "AWS", rating: 3 }
+      ]
     },
     {
       title: "DevOps & Tools",
       icon: Users,
       color: "from-green-400 to-teal-500",
-      skills: ["Terraform", "Git", "Linux", "N8N", "AKS"]
+      skills: [
+        { name: "Terraform", rating: 5 },
+        { name: "Git", rating: 4 },
+        { name: "Linux", rating: 4 },
+        { name: "N8N", rating: 4 },
+        { name: "AKS", rating: 5 }
+      ]
     },
     {
       title: "Frameworks & Tech",
       icon: Star,
       color: "from-orange-400 to-red-500",
-      skills: ["Flask", "Databricks", "Postman", "Node.js"]
+      skills: [
+        { name: "Flask", rating: 5 },
+        { name: "Databricks", rating: 3 },
+        { name: "Postman", rating: 4 },
+        { name: "Node.js", rating: 4 }
+      ]
     }
   ];
 
@@ -67,7 +88,7 @@ const SkillsSection = () => {
               {/* Skills */}
               <div className="space-y-3">
                 {category.skills.map((skill, skillIndex) => {
-                  const globalIndex = categoryIndex * 4 + skillIndex;
+                  const globalIndex = categoryIndex * 5 + skillIndex;
                   const isVisible = visibleSkills > globalIndex;
                   
                   return (
@@ -80,14 +101,14 @@ const SkillsSection = () => {
                       <div className="bg-gray-800/30 backdrop-blur-sm border border-gray-700/50 rounded-xl p-4 hover:border-cyan-400/50 hover:bg-gray-800/50 transition-all duration-300 hover:scale-105">
                         <div className="flex items-center justify-between">
                           <span className="text-gray-300 font-medium group-hover:text-white transition-colors duration-300">
-                            {skill}
+                            {skill.name}
                           </span>
                           <div className="flex space-x-1">
                             {[...Array(5)].map((_, i) => (
                               <div
                                 key={i}
                                 className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                                  i < 4 ? `bg-gradient-to-r ${category.color}` : 'bg-gray-600'
+                                  i < skill.rating ? `bg-gradient-to-r ${category.color}` : 'bg-gray-600'
                                 }`}
                               />
                             ))}

@@ -11,21 +11,27 @@ const ProjectsSection = () => {
       description: "N8N + OpenRouter-based AI email classifier with auto-scheduling capabilities for intelligent inbox management.",
       tech: ["N8N", "OpenRouter AI", "Email APIs", "Automation"],
       gradient: "from-cyan-500 to-blue-600",
-      icon: "📧"
+      icon: "📧",
+      githubUrl: "https://github.com/aryanadla/SmartInbox-Scheduler",
+      demoUrl: "#"
     },
     {
       title: "AI-Driven IaaS Provisioning",
       description: "Terraform + Flask application for auto-provisioning AKS clusters with real-time monitoring and intelligent resource management.",
       tech: ["Terraform", "Flask", "Azure AKS", "Monitoring"],
       gradient: "from-purple-500 to-pink-600",
-      icon: "☁️"
+      icon: "☁️",
+      githubUrl: "https://github.com/aryanadla/AI-IaaS-Provisioning",
+      demoUrl: "#"
     },
     {
       title: "Shortify",
       description: "Full-stack URL shortener built with Node.js, TypeScript, and PostgreSQL featuring analytics and custom domains.",
       tech: ["Node.js", "TypeScript", "PostgreSQL", "React"],
       gradient: "from-green-500 to-teal-600",
-      icon: "🔗"
+      icon: "🔗",
+      githubUrl: "https://github.com/aryanadla/Shortify",
+      demoUrl: "#"
     }
   ];
 
@@ -82,14 +88,22 @@ const ProjectsSection = () => {
 
                   {/* Action buttons */}
                   <div className="flex space-x-3">
-                    <button className="flex items-center space-x-2 px-4 py-2 bg-gradient-to-r from-cyan-500/20 to-purple-500/20 border border-cyan-500/30 rounded-lg text-cyan-400 hover:border-cyan-400 hover:bg-cyan-500/30 transition-all duration-300 group-hover:scale-105">
+                    <a
+                      href={project.githubUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center space-x-2 px-4 py-2 bg-gradient-to-r from-cyan-500/20 to-purple-500/20 border border-cyan-500/30 rounded-lg text-cyan-400 hover:border-cyan-400 hover:bg-cyan-500/30 transition-all duration-300 group-hover:scale-105"
+                    >
                       <Github className="w-4 h-4" />
                       <span>Code</span>
-                    </button>
-                    <button className="flex items-center space-x-2 px-4 py-2 bg-gradient-to-r from-purple-500/20 to-pink-500/20 border border-purple-500/30 rounded-lg text-purple-400 hover:border-purple-400 hover:bg-purple-500/30 transition-all duration-300 group-hover:scale-105">
+                    </a>
+                    <a
+                      href={project.demoUrl}
+                      className="flex items-center space-x-2 px-4 py-2 bg-gradient-to-r from-purple-500/20 to-pink-500/20 border border-purple-500/30 rounded-lg text-purple-400 hover:border-purple-400 hover:bg-purple-500/30 transition-all duration-300 group-hover:scale-105"
+                    >
                       <Star className="w-4 h-4" />
                       <span>Demo</span>
-                    </button>
+                    </a>
                   </div>
                 </div>
 
@@ -104,6 +118,8 @@ const ProjectsSection = () => {
         <div className="text-center mt-16">
           <a
             href="https://github.com/aryanadla"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center space-x-2 px-8 py-4 bg-gradient-to-r from-cyan-500 to-purple-600 rounded-lg font-semibold text-white hover:from-cyan-600 hover:to-purple-700 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-purple-500/25"
           >
             <Github className="w-5 h-5" />

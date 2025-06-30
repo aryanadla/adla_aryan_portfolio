@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { Mail, Github, Star, Send } from 'lucide-react';
+import { Mail, Github, Linkedin, Send } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 
 const ContactSection = () => {
@@ -44,7 +44,7 @@ const ContactSection = () => {
     },
     {
       name: 'LinkedIn',
-      icon: Star,
+      icon: Linkedin,
       url: 'https://www.linkedin.com/in/adla-aryan-aa4049216/',
       label: 'LinkedIn Profile',
       color: 'from-blue-400 to-cyan-500'
@@ -58,7 +58,7 @@ const ContactSection = () => {
     },
     {
       name: 'Google Scholar',
-      icon: Star,
+      icon: Linkedin,
       url: 'https://scholar.google.com/citations?user=SDVnhIYAAAAJ&hl=en',
       label: 'Research Publications',
       color: 'from-green-400 to-teal-500'
