@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { Mail, Github, Linkedin, Send } from 'lucide-react';
+import { Mail, Github, Linkedin, Send, GraduationCap } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 
 const ContactSection = () => {
@@ -58,7 +58,7 @@ const ContactSection = () => {
     },
     {
       name: 'Google Scholar',
-      icon: Linkedin,
+      icon: GraduationCap,
       url: 'https://scholar.google.com/citations?user=SDVnhIYAAAAJ&hl=en',
       label: 'Research Publications',
       color: 'from-green-400 to-teal-500'
