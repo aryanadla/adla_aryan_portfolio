@@ -1,6 +1,7 @@
 
 import React, { useEffect, useRef } from 'react';
 import { Github, Mail, Download, Linkedin } from 'lucide-react';
+import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
 
 const HeroSection = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -104,9 +105,16 @@ const HeroSection = () => {
         <div className="mb-8 animate-fade-in">
           <div className="inline-block p-1 rounded-full bg-gradient-to-r from-cyan-400 to-purple-500 mb-6">
             <div className="bg-gray-900 rounded-full p-8">
-              <div className="w-32 h-32 bg-gradient-to-br from-cyan-400 to-purple-500 rounded-full flex items-center justify-center text-4xl font-bold">
-                AA
-              </div>
+              <Avatar className="w-32 h-32">
+                <AvatarImage 
+                  src="/placeholder.svg" 
+                  alt="Adla Aryan"
+                  className="object-cover"
+                />
+                <AvatarFallback className="w-32 h-32 bg-gradient-to-br from-cyan-400 to-purple-500 text-4xl font-bold text-white">
+                  AA
+                </AvatarFallback>
+              </Avatar>
             </div>
           </div>
         </div>
