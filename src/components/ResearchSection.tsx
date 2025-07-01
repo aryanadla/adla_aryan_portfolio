@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { BookOpen, Award, Users, ExternalLink } from 'lucide-react';
 
@@ -35,12 +34,12 @@ const ResearchSection = () => {
     },
     {
       title: "VMatter: AI-Enabled IoT-Based Patient Monitoring and Room Automation",
-      description: "Developed during TechnoHacks Hackathon, December 2024, Hyderabad. Secured 3rd place. Springer conference publication pending.",
+      description: "Developed during TechnoHacks Hackathon, December 2024, Hyderabad. Secured 3rd place. Still Under Publication.",
       category: "IoT & Healthcare",
       award: "3rd Place - TechnoHacks",
       gradient: "from-red-500 to-pink-600",
       icon: "🏥",
-      link: "#" // Since this is pending publication
+      link: "#" // Since this is still under publication
     },
     {
       title: "Enhanced Model for Mango Detection and Quality Classification Using Optimized Feature Extraction Techniques",
