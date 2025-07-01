@@ -11,7 +11,7 @@ const ExperienceSection = () => {
       company: "IEEE HYDERABAD",
       duration: "June 2024 - Dec 2024",
       location: "Hyderabad, Telangana",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/IEEE_logo.svg/320px-IEEE_logo.svg.png",
+      logo: "/lovable-uploads/2a31c732-3dd3-40c2-b126-9aa7b98a2766.png",
       gradient: "from-blue-500 to-blue-700",
       achievements: [
         "Contributing to and working on a research project focused on LULC image analysis using time-series satellite data and LSTM for high-accuracy land cover classification.",
@@ -65,7 +65,7 @@ const ExperienceSection = () => {
                         <img 
                           src={experience.logo} 
                           alt={`${experience.company} logo`}
-                          className="w-full h-full object-contain filter brightness-0 invert"
+                          className={`w-full h-full object-contain ${index === 0 ? '' : 'filter brightness-0 invert'}`}
                         />
                       </div>
                     </div>
