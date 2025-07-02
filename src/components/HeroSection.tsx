@@ -1,3 +1,4 @@
+
 import React, { useEffect, useRef } from 'react';
 import { Github, Mail, Download, Linkedin } from 'lucide-react';
 
@@ -91,7 +92,7 @@ const HeroSection = () => {
   ];
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
       <canvas
         ref={canvasRef}
         className="absolute inset-0 z-0"
