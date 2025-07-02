@@ -21,7 +21,7 @@ const ProjectsSection = () => {
       tech: ["Terraform", "Flask", "Azure AKS", "Monitoring"],
       gradient: "from-purple-500 to-pink-600",
       icon: "☁️",
-      githubUrl: "https://github.com/aryanadla/AI-IaaS-Provisioning",
+      githubUrl: "https://github.com/aryanadla/AI-Driven-Workspace-Provisioning-for-IaaS-Compute-and-AKS",
       demoUrl: "#"
     },
     {
