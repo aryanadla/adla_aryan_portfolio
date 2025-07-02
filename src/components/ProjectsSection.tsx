@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Github, Star, Code } from 'lucide-react';
 
@@ -30,7 +29,7 @@ const ProjectsSection = () => {
       tech: ["Node.js", "TypeScript", "PostgreSQL", "React"],
       gradient: "from-green-500 to-teal-600",
       icon: "🔗",
-      githubUrl: "https://github.com/aryanadla/Shortify",
+      githubUrl: "https://github.com/aryanadla/Shortify-Scalable_URL_Shortening_Service",
       demoUrl: "#"
     }
   ];
