@@ -11,7 +11,7 @@ const ExperienceSection = () => {
       company: "IEEE HYDERABAD",
       duration: "June 2024 - Dec 2024",
       location: "Hyderabad, Telangana",
-      logo: "/lovable-uploads/2a31c732-3dd3-40c2-b126-9aa7b98a2766.png",
+      logo: null,
       gradient: "from-blue-500 to-blue-700",
       achievements: [
         "Contributing to and working on a research project focused on LULC image analysis using time-series satellite data and LSTM for high-accuracy land cover classification.",
@@ -62,11 +62,17 @@ const ExperienceSection = () => {
                   <div className="flex items-start space-x-6 mb-4 md:mb-0">
                     <div className="flex-shrink-0">
                       <div className={`w-16 h-16 bg-gradient-to-br ${experience.gradient} rounded-xl flex items-center justify-center p-2 shadow-lg transform transition-transform duration-300 ${hoveredExperience === index ? 'scale-110 rotate-3' : ''}`}>
-                        <img 
-                          src={experience.logo} 
-                          alt={`${experience.company} logo`}
-                          className={`w-full h-full object-contain ${index === 0 ? '' : 'filter brightness-0 invert'}`}
-                        />
+                        {experience.logo ? (
+                          <img 
+                            src={experience.logo} 
+                            alt={`${experience.company} logo`}
+                            className="w-full h-full object-contain filter brightness-0 invert"
+                          />
+                        ) : (
+                          <span className="text-white font-bold text-sm text-center">
+                            {experience.company.split(' ').map(word => word[0]).join('')}
+                          </span>
+                        )}
                       </div>
                     </div>
                     
