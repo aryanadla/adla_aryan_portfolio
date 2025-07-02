@@ -1,5 +1,6 @@
+
 import React, { useState } from 'react';
-import { Github, Star, Code } from 'lucide-react';
+import { Github, Code } from 'lucide-react';
 
 const ProjectsSection = () => {
   const [hoveredProject, setHoveredProject] = useState<number | null>(null);
@@ -11,8 +12,7 @@ const ProjectsSection = () => {
       tech: ["N8N", "OpenRouter AI", "Email APIs", "Automation"],
       gradient: "from-cyan-500 to-blue-600",
       icon: "📧",
-      githubUrl: "https://github.com/aryanadla/SmartInbox-Scheduler",
-      demoUrl: "#"
+      githubUrl: "https://github.com/aryanadla/SmartInbox-Scheduler"
     },
     {
       title: "AI-Driven IaaS Provisioning and Monitoring",
@@ -20,8 +20,7 @@ const ProjectsSection = () => {
       tech: ["Terraform", "Flask", "Azure AKS", "Monitoring"],
       gradient: "from-purple-500 to-pink-600",
       icon: "☁️",
-      githubUrl: "https://github.com/aryanadla/AI-Driven-Workspace-Provisioning-for-IaaS-Compute-and-AKS",
-      demoUrl: "#"
+      githubUrl: "https://github.com/aryanadla/AI-Driven-Workspace-Provisioning-for-IaaS-Compute-and-AKS"
     },
     {
       title: "Shortify",
@@ -29,8 +28,7 @@ const ProjectsSection = () => {
       tech: ["Node.js", "TypeScript", "PostgreSQL", "React"],
       gradient: "from-green-500 to-teal-600",
       icon: "🔗",
-      githubUrl: "https://github.com/aryanadla/Shortify-Scalable_URL_Shortening_Service",
-      demoUrl: "#"
+      githubUrl: "https://github.com/aryanadla/Shortify-Scalable_URL_Shortening_Service"
     }
   ];
 
@@ -85,8 +83,8 @@ const ProjectsSection = () => {
                     ))}
                   </div>
 
-                  {/* Action buttons */}
-                  <div className="flex space-x-3">
+                  {/* Action button */}
+                  <div className="flex">
                     <a
                       href={project.githubUrl}
                       target="_blank"
@@ -95,13 +93,6 @@ const ProjectsSection = () => {
                     >
                       <Github className="w-4 h-4" />
                       <span>Code</span>
-                    </a>
-                    <a
-                      href={project.demoUrl}
-                      className="flex items-center space-x-2 px-4 py-2 bg-gradient-to-r from-purple-500/20 to-pink-500/20 border border-purple-500/30 rounded-lg text-purple-400 hover:border-purple-400 hover:bg-purple-500/30 transition-all duration-300 group-hover:scale-105"
-                    >
-                      <Star className="w-4 h-4" />
-                      <span>Demo</span>
                     </a>
                   </div>
                 </div>
