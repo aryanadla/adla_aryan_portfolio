@@ -13,6 +13,7 @@ const ExperienceSection = () => {
       location: "Hyderabad, Telangana",
       logo: null,
       gradient: "from-blue-500 to-blue-700",
+      displayText: "IEEE",
       achievements: [
         "Contributing to and working on a research project focused on LULC image analysis using time-series satellite data and LSTM for high-accuracy land cover classification.",
         "Participated in the development and submission of research article for IEEE conferences as part of the IEEE Hyderabad Section initiatives.",
@@ -70,7 +71,7 @@ const ExperienceSection = () => {
                           />
                         ) : (
                           <span className="text-white font-bold text-sm text-center">
-                            {experience.company.split(' ').map(word => word[0]).join('')}
+                            {experience.displayText || experience.company.split(' ').map(word => word[0]).join('')}
                           </span>
                         )}
                       </div>
