@@ -16,7 +16,7 @@ const ProjectsSection = () => {
       demoUrl: "#"
     },
     {
-      title: "AI-Driven IaaS Provisioning",
+      title: "AI-Driven IaaS Provisioning and Monitoring",
       description: "Terraform + Flask application for auto-provisioning AKS clusters with real-time monitoring and intelligent resource management.",
       tech: ["Terraform", "Flask", "Azure AKS", "Monitoring"],
       gradient: "from-purple-500 to-pink-600",
