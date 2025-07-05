@@ -12,6 +12,12 @@ const CertificationsSection = () => {
     color: "from-blue-400 to-blue-600",
     description: "Comprehensive cloud infrastructure and services expertise"
   }, {
+    title: "Microsoft Certified: Azure AI Fundamentals",
+    provider: "Microsoft",
+    icon: "🧠",
+    color: "from-blue-500 to-indigo-600",
+    description: "Foundational knowledge of AI and machine learning concepts on Azure"
+  }, {
     title: "Microsoft Certified: Azure AI Engineer Associate",
     provider: "Microsoft",
     icon: "🤖",
