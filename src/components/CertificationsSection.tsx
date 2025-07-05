@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Award, Star } from 'lucide-react';
 
@@ -89,26 +90,6 @@ const CertificationsSection = () => {
               </div>
             </div>
           ))}
-        </div>
-
-        {/* Stats section */}
-        <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8">
-          <div className="text-center">
-            <div className="text-3xl font-bold text-cyan-400 mb-2">10</div>
-            <div className="text-gray-400">Certifications</div>
-          </div>
-          <div className="text-center">
-            <div className="text-3xl font-bold text-purple-400 mb-2">3</div>
-            <div className="text-gray-400">Cloud Platforms</div>
-          </div>
-          <div className="text-center">
-            <div className="text-3xl font-bold text-green-400 mb-2">100%</div>
-            <div className="text-gray-400">Pass Rate</div>
-          </div>
-          <div className="text-center">
-            <div className="text-3xl font-bold text-yellow-400 mb-2">2025</div>
-            <div className="text-gray-400">Latest Cert</div>
-          </div>
         </div>
       </div>
     </section>
