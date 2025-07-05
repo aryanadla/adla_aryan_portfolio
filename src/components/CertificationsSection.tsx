@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import { Award, Star } from 'lucide-react';
+
 const CertificationsSection = () => {
   const [hoveredCert, setHoveredCert] = useState<number | null>(null);
+
   const certifications = [{
     title: "Google Cloud Certified Associate Cloud Engineer",
     provider: "Google Cloud",
@@ -27,7 +29,9 @@ const CertificationsSection = () => {
     color: "from-orange-400 to-yellow-500",
     description: "Database development and administration expertise"
   }];
-  return <section className="py-20 px-4 relative">
+
+  return (
+    <section id="certifications" className="py-20 px-4 relative">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
@@ -40,14 +44,20 @@ const CertificationsSection = () => {
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {certifications.map((cert, index) => <div key={index} className="group relative" onMouseEnter={() => setHoveredCert(index)} onMouseLeave={() => setHoveredCert(null)}>
+          {certifications.map((cert, index) => (
+            <div
+              key={index}
+              className="group relative"
+              onMouseEnter={() => setHoveredCert(index)}
+              onMouseLeave={() => setHoveredCert(null)}
+            >
               <div className="bg-gray-800/30 backdrop-blur-sm border border-gray-700/50 rounded-2xl p-8 h-full transition-all duration-500 hover:border-cyan-400/50 hover:scale-110 hover:bg-gray-800/50 text-center">
                 {/* 3D rotating icon */}
                 <div className="relative mb-6">
                   <div className={`w-20 h-20 mx-auto bg-gradient-to-br ${cert.color} rounded-2xl flex items-center justify-center text-4xl shadow-lg transform transition-all duration-500 ${hoveredCert === index ? 'rotate-y-180 scale-110' : ''}`} style={{
-                transformStyle: 'preserve-3d',
-                transform: hoveredCert === index ? 'rotateY(180deg) scale(1.1)' : 'rotateY(0deg) scale(1)'
-              }}>
+                    transformStyle: 'preserve-3d',
+                    transform: hoveredCert === index ? 'rotateY(180deg) scale(1.1)' : 'rotateY(0deg) scale(1)'
+                  }}>
                     {cert.icon}
                   </div>
                   
@@ -77,7 +87,8 @@ const CertificationsSection = () => {
                 {/* Hover effect overlay */}
                 <div className={`absolute inset-0 bg-gradient-to-br ${cert.color} opacity-0 group-hover:opacity-5 rounded-2xl transition-opacity duration-500`}></div>
               </div>
-            </div>)}
+            </div>
+          ))}
         </div>
 
         {/* Stats section */}
@@ -100,6 +111,8 @@ const CertificationsSection = () => {
           </div>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default CertificationsSection;
